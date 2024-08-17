@@ -1,0 +1,102 @@
+Counting Bigrams: Testing Plan
+
+List your test cases below. The first test case is provided so you have an example to work from. Every test should include a short name for the test, a description of what the test case covers, the input you will provide to the program, and the expected output. If your test case focuses on just part of the output you are welcome to abbreviate the expected output (note any omitted parts of the input with "..."). Please leave a blank line between test cases so they are visually separated.
+
+Tests:
+
+1. Short lowercase input
+This test checks to make sure the program handles a short input containing only lowercase letters.
+Input: "abc"
+Expected Output:
+"ab": 1
+"bc": 1
+Most common bigram: "ab"
+
+2. A long word
+This test checks to make sure the program handles a long input containing only lowercase letters.
+Input: "antidisestablishmentarianism"
+Expected Output:
+"ab": 1
+"an": 2
+"ar": 1
+"bl": 1
+"di": 1
+"en" : 1
+"es": 1
+"hm": 1
+"ia": 1
+"id": 1
+"is": 3
+"li": 1
+"me": 1
+"ni": 1
+"nt": 2
+"ri": 1
+"se": 1
+"sh": 1
+"sm": 1
+"st": 1
+"ta": 2
+"ti": 1
+Most common bigram: "is"
+
+3. A rhyming input with numbers and punctuation
+This test checks to make sure the program handles a long input containing lowercase letters, numbers, spaces and special characters.
+Input: "161 is (sometimes) fun"
+Expected Output:
+" (": 1
+" f": 1
+" i": 1
+"(s": 1
+") ": 1
+"1 ": 1
+"16": 1
+"61": 1
+"es": 1
+"et": 1
+"fu": 1
+"im": 1
+"is": 1
+"me": 2
+"om": 1
+"s " : 1
+"s)": 1
+"so": 1
+"ti": 1
+"un": 1
+Most common bigram: "me"
+
+4. An even longer input with capital letters and punctuation
+This test checks to make sure the program handles a long input containing letters and punctuation
+Input: "Sally sells seashells by the seashore."
+Expected Output:
+" b" : 1
+" S": 3
+" t": 1
+"Sa": 1
+"al": 1
+"as": 2
+"by": 1
+"e ": 1
+"e.": 1
+"ea": 2
+"el": 2
+"he": 2
+"ho": 1
+"11": 3
+"ls" : 2
+"ly": 1
+"or": 1
+"re": 1
+"s ": 2
+"se": 3
+"sh": 2
+"th": 1
+"y ": 2
+Most common bigram: " s"
+
+5. One letter input
+This test checks to make sure the program handles a single letter input
+Input: "a"
+Expected Output:
+The input did not contain any bigrams.
