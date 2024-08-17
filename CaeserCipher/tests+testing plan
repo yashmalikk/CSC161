@@ -1,0 +1,218 @@
+Encryption: Testing Plan
+
+List your test cases below. 
+
+Tests:
+Encryption tests:
+
+1. Short lowercase input 
+    
+This test checks to make sure the program handles a short input containing only lowercase letters.
+Input: "helloworld"
+Expected Output:
+n = 0: helloworld
+n = 1: ifmmpxpsme
+n = 2: jgnnqyqtnf
+n = 3: khoorzruog
+n = 4: lippsasvph
+n = 5: mjqqtbtwqi
+n = 6: nkrrucuxrj
+n = 7: olssvdvysk
+n = 8: pmttwewztl
+n = 9: qnuuxfxaum
+n = 10: rovvygybvn
+n = 11: spwwzhzcwo
+n = 12: tqxxaiadxp
+n = 13: uryybjbeyq
+n = 14: vszzckcfzr
+n = 15: wtaadldgas
+n = 16: xubbemehbt
+n = 17: yvccfnficu
+n = 18: zwddgogjdv
+n = 19: axeehphkew
+n = 20: byffiqilfx
+n = 21: czggjrjmgy
+n = 22: dahhksknhz
+n = 23: ebiiltloia
+n = 24: fcjjmumpjb
+n = 25: gdkknvnqkc
+
+2. Input with spaces and capital letters
+This test checks to make sure the program handles a input containing spaces and uppercase letters.
+Input: "Hello World"
+Expected Output:
+n = 0: Hello
+n = 1: Hfmmp
+n = 2: Hgnnq
+n = 3: Hhoor
+n = 4: Hipps
+n = 5: Hjqqt
+n = 6: Hkrru
+n = 7: Hlssv
+n = 8: Hmttw
+n = 9: Hnuux
+n = 10: Hovvy
+n = 11: Hpwwz
+n = 12: Hqxxa
+n = 13: Hryyb
+n = 14: Hszzc
+n = 15: Htaad
+n = 16: Hubbe
+n = 17: Hvccf
+n = 18: Hwddg
+n = 19: Hxeeh
+n = 20: Hyffi
+n = 21: Hzggj
+n = 22: Hahhk
+n = 23: Hbiil
+n = 24: Hcjjm
+n = 25: Hdkkn
+
+Explaination:
+The program should truncate the space and not change any character that is not lowercase.
+
+3. 100+ letter string.
+This test checks to make sure the program handles a input containing more than 100 letters.
+Input: "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+Expected Output:
+n = 0: abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv
+n = 1: bcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvw
+n = 2: cdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx
+n = 3: defghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxy
+n = 4: efghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+n = 5: fghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyza
+n = 6: ghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzab
+n = 7: hijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabc
+n = 8: ijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd
+n = 9: jklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcde
+n = 10: klmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdef
+n = 11: lmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefg
+n = 12: mnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefgh
+n = 13: nopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghi
+n = 14: opqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghij
+n = 15: pqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijk
+n = 16: qrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijkl
+n = 17: rstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklm
+n = 18: stuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmn
+n = 19: tuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmno
+n = 20: uvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnop
+n = 21: vwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopq
+n = 22: wxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqr
+n = 23: xyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrs
+n = 24: yzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst
+n = 25: zabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstu
+
+Explaination:
+
+The Program must truncate input after 100 characters.
+
+
+Decryption tests:
+
+4. Short lowercase input 
+    
+This test checks to make sure the program handles a short input containing only lowercase letters.
+Input: "helloworld"
+Expected Output:
+n = 0: helloworld
+n = 1: gdkknvnqkc
+n = 2: fcjjmumpjb
+n = 3: ebiiltloia
+n = 4: dahhksknhz
+n = 5: czggjrjmgy
+n = 6: byffiqilfx
+n = 7: axeehphkew
+n = 8: zwddgogjdv
+n = 9: yvccfnficu
+n = 10: xubbemehbt
+n = 11: wtaadldgas
+n = 12: vszzckcfzr
+n = 13: uryybjbeyq
+n = 14: tqxxaiadxp
+n = 15: spwwzhzcwo
+n = 16: rovvygybvn
+n = 17: qnuuxfxaum
+n = 18: pmttwewztl
+n = 19: olssvdvysk
+n = 20: nkrrucuxrj
+n = 21: mjqqtbtwqi
+n = 22: lippsasvph
+n = 23: khoorzruog
+n = 24: jgnnqyqtnf
+n = 25: ifmmpxpsme
+
+5. Input with spaces and capital letters
+This test checks to make sure the program handles a input containing spaces and uppercase letters.
+Input: "Hello World"
+Expected Output:
+n = 0: Hello
+n = 1: Hdkkn
+n = 2: Hcjjm
+n = 3: Hbiil
+n = 4: Hahhk
+n = 5: Hzggj
+n = 6: Hyffi
+n = 7: Hxeeh
+n = 8: Hwddg
+n = 9: Hvccf
+n = 10: Hubbe
+n = 11: Htaad
+n = 12: Hszzc
+n = 13: Hryyb
+n = 14: Hqxxa
+n = 15: Hpwwz
+n = 16: Hovvy
+n = 17: Hnuux
+n = 18: Hmttw
+n = 19: Hlssv
+n = 20: Hkrru
+n = 21: Hjqqt
+n = 22: Hipps
+n = 23: Hhoor
+n = 24: Hgnnq
+n = 25: Hfmmp
+
+Explaination:
+The program should truncate the space and not change any character that is not lowercase.
+
+6. 100+ letter string.
+This test checks to make sure the program handles a input containing more than 100 letters.
+Input: "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+Expected Output:
+n = 0: abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv
+n = 1: zabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstu
+n = 2: yzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst
+n = 3: xyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrs
+n = 4: wxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqr
+n = 5: vwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopq
+n = 6: uvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnop
+n = 7: tuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmno
+n = 8: stuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmn
+n = 9: rstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklm
+n = 10: qrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijkl
+n = 11: pqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijk
+n = 12: opqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghij
+n = 13: nopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghi
+n = 14: mnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefgh
+n = 15: lmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefg
+n = 16: klmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdef
+n = 17: jklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcde
+n = 18: ijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd
+n = 19: hijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabc
+n = 20: ghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzab
+n = 21: fghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyza
+n = 22: efghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+n = 23: defghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxy
+n = 24: cdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx
+n = 25: bcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvw
+
+Explanation:
+The Program must truncate input after 100 characters.
+
+Miscellanious test:
+
+7. Choosing neither e or d for user choice.
+This test checks to make sure the program handles a input that isn't valid.
+Input: "f"
+Expected Output:
+Valid options are 'e' to encode or 'd' to decode.
