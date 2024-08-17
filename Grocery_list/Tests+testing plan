@@ -1,0 +1,312 @@
+
+
+Grocery list: Testing Plan
+
+List your test cases below. 
+
+Tests:
+Grocery list tests:
+
+
+Empty List Handling:
+    1. Test adding an item to an empty list.
+        Input: >>add banana
+               >>4
+        Output: 
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: add banana
+            What item would you like to add?
+            >> How many would you like?
+            >> 4
+            Item added successfully.
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command:
+    2. Test looking up an item in an empty list.
+        Input:  >>lookup
+                >>e
+        Output:
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: lookup 
+            What item are you looking for?
+            >> e
+            I didn't find e on the list.
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: lookup e
+            What item are you looking for?
+            >> I didn't find e on the list.
+    3. Test printing an empty list.
+        Input:  >>print
+
+        Output:
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: print
+            The list is empty.
+            What do you want to do? Type one of the following commands:
+Single Item Handling:
+    4. Test adding a single item with a quantity of 1.
+        Input: >>apple
+               >>1
+        Output:
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: add      
+            What item would you like to add?
+            >> apple
+            How many would you like?
+            >> 1
+            Item added successfully.
+    5. Test adding a single item with a quantity greater than 1.
+        Input: >>apple
+               >>12
+        Output:
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: add      
+            What item would you like to add?
+            >> apple
+            How many would you like?
+            >> 12
+            Item added successfully.
+    6. Test looking up a single item.
+        Input:  >> apple
+                >> 12
+                >> lookup
+                >> apple
+        Output:
+                What do you want to do? Type one of the following commands:
+                add: add an item
+                lookup: look up an item
+                print: print the list
+                exit: exit the program
+                Command: add
+                What item would you like to add?
+                >> apple
+                How many would you like?
+                >> 12
+                Item added successfully.
+                What do you want to do? Type one of the following commands:
+                add: add an item
+                lookup: look up an item
+                print: print the list
+                exit: exit the program
+                Command: lookup
+                What item are you looking for?
+                >> apple
+                You need 12 apple
+    7. Test printing a list with a single item.
+        Input:  >> apple
+                >> 1
+                >> print
+        Output:
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: add
+            What item would you like to add?
+            >> apple
+            How many would you like?
+            >> 1
+            Item added successfully.
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: print
+            Grocery List:
+            - 1 apple
+
+            
+Multiple Items Handling:
+    8. Test adding multiple different items.
+    9. Test adding multiple items with the same name but different quantities.
+    10. Test adding multiple items with the same name and the same quantity.
+    11. Test looking up multiple items, including items with the same name.
+    12. Test printing a list with multiple items.
+
+    Inputs and Outputs
+    (8-12 all tested together):
+    What do you want to do? Type one of the following commands:
+    add: add an item
+    lookup: look up an item
+    print: print the list
+    exit: exit the program
+    Command: add
+    What item would you like to add?
+    >> apples
+    How many would you like?
+    >> 2
+    Item added successfully.
+    What do you want to do? Type one of the following commands:
+    add: add an item
+    lookup: look up an item
+    print: print the list
+    exit: exit the program
+    Command: add bananas
+    What item would you like to add?
+    >> How many would you like?
+    >> 2
+    Item added successfully.
+    What do you want to do? Type one of the following commands:
+    add: add an item
+    lookup: look up an item
+    print: print the list
+    exit: exit the program
+    Command: add
+    What item would you like to add?
+    >> apples
+    How many would you like?
+    >> 4
+    Item added successfully.
+    What do you want to do? Type one of the following commands:
+    add: add an item
+    lookup: look up an item
+    print: print the list
+    exit: exit the program
+    Command: lookup
+    What item are you looking for?
+    >> apples
+    You need 6 apples
+    What do you want to do? Type one of the following commands:
+    add: add an item
+    lookup: look up an item
+    print: print the list
+    exit: exit the program
+    Command: lookup
+    What item are you looking for?
+    >> bananas
+    You need 2 bananas
+    What do you want to do? Type one of the following commands:
+    add: add an item
+    lookup: look up an item
+    print: print the list
+    exit: exit the program
+    Command: print
+    Grocery List:
+    - 6 apples
+    - 2 bananas
+
+Input Validation:
+    13. Test adding an item with an empty name.     (input not accepted)
+    14. Test adding an item with a name longer than the maximum allowed length.     (program crashes)
+    15. Test adding an item with a negative quantity.       ()
+    16. Test adding an item with a quantity of 0.
+
+
+    Inputs and Outputs
+    (13-16 all tested together)
+        What do you want to do? Type one of the following commands:
+        add: add an item
+        lookup: look up an item
+        print: print the list
+        exit: exit the program
+        Command: add
+        What item would you like to add?
+        >> apples
+        How many would you like?
+        >> -12
+        Invalid Number. Try again.
+        How many would you like?
+        0
+        Item added successfully.
+
+Misc. Tests
+    17. Test entering commands with different capitalization ("Add", "Lookup", "Print", "Exit") to ensure they are recognized correctly.
+        Inputs and Outputs
+
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: add
+            What item would you like to add?
+            >> apples
+            How many would you like?
+            >> -12
+            Invalid Number. Try again.
+            How many would you like?
+            0
+            Item added successfully.
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: add
+            What item would you like to add?
+            >> apples
+            How many would you like?
+            >> 3
+            Item added successfully.
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: Add
+            Unrecognized command.
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: Lookup
+            Unrecognized command.
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: Print
+            Unrecognized command.
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: Exit
+            Unrecognized command.
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: exit
+
+    18. Test exiting the program without adding any items.
+        Inputs and Outputs:
+            What do you want to do? Type one of the following commands:
+            add: add an item
+            lookup: look up an item
+            print: print the list
+            exit: exit the program
+            Command: exit
